@@ -1,0 +1,43 @@
+{
+    "name": "asifm42/scorm-cloud-laravel",
+    "description": "Provides a ScormCloud API gateway for Laravel applications",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Asif Mohammed",
+            "email": "asifm42@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "keywords": [
+        "asifm42",
+        "scorm",
+        "cloud",
+        "laravel",
+        "php"
+    ],
+    "require": {
+        "php" : "^7.0",
+        "illuminate/config": "~5.5.0",
+        "illuminate/support": "~5.5.0",
+        "asifm42/scorm-cloud-php": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "AsifM42\\ScormCloudGateway\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AsifM42\\ScormCloudGateway\\ScormCloudServiceProvider"
+            ],
+            "aliases": {
+                "ScormCloud": "AsifM42\\ScormCloudGateway\\ScormCloud"
+            }
+        }
+    }
+}
