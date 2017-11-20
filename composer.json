@@ -20,7 +20,7 @@
         "php": ">=7.0.0",
         "illuminate/config": "5.5.*",
         "illuminate/support": "5.5.*",
-        "asifm42/scorm-cloud-php": "dev-master"
+        "asifm42/scorm-cloud-php": "1.0.*"
     },
     "autoload": {
         "psr-4": {
