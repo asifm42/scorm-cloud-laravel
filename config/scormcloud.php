@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'url' => env('SCORMCLOUD_URL',''),
+    'url' => env('SCORMCLOUD_URL','https://cloud.scorm.com/EngineWebServices'),
     'app_id' => env('SCORMCLOUD_APPID',''),
     'key' => env('SCORMCLOUD_KEY',''),
     'organization' => env('SCORMCLOUD_ORGANIZATION',''),
