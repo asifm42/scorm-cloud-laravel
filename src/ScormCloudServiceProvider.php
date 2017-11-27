@@ -33,7 +33,7 @@ class ScormCloudServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'../config/scormcloud.php' => config_path('scormcloud.php'),
+            __DIR__.'/../config/scormcloud.php' => config_path('scormcloud.php'),
         ], 'config');
 
         $this->mergeConfigFrom(__DIR__.'/../config/scormcloud.php', 'scormcloud');
