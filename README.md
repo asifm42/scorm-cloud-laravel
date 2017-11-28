@@ -11,14 +11,14 @@ This library is available [via Composer][1].
 
 Command Line:
 ```sh
-composer require asifm42/scorm-cloud-php
+composer require asifm42/scorm-cloud-laravel
 ```
 
 Composer.json:
 ```json
 {
     "require": {
-        "asifm42/scorm-cloud-php": "dev-master"
+        "asifm42/scorm-cloud-laravel": "dev-master"
     }
 }
 ```
