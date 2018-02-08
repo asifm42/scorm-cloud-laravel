@@ -2,10 +2,11 @@
 
 namespace AsifM42\ScormCloudGateway;
 
+use AsifM42\ScormCloudGateway\ScormGateway;
 use AsifM42\ScormCloud\ScormEngineService;
 use AsifM42\ScormCloud\ScormEngineUtilities;
 
-class ScormCloudGateway
+class ScormCloudGateway implements ScormGateway
 {
     protected $scormService = null;
 
@@ -38,7 +39,7 @@ class ScormCloudGateway
 
     public function getRegistrations($courseId = null, $learnerId = null)
     {
-        return $this->scormService->getRegistrationService()->getRegistrationList(null, 'asifm42+scorm2@gmail.com');
+        return $this->scormService->getRegistrationService()->getRegistrationList($courseId, $learnerId);
     }
 
     public function getScormService()
