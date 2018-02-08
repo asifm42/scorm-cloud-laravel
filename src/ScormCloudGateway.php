@@ -42,6 +42,11 @@ class ScormCloudGateway implements ScormGateway
         return $this->scormService->getRegistrationService()->getRegistrationList($courseId, $learnerId);
     }
 
+    public function getLaunchUrl($regId, $redirectUrl = 'closer')
+    {
+        return $this->scormService->getRegistrationService()->getLaunchUrl($regId, $redirectUrl);
+    }
+
     public function getScormService()
     {
         return $this->scormService;

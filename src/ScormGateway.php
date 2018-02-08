@@ -9,4 +9,6 @@ interface ScormGateway
     public function getRegistrations($courseId = null, $learnerId = null);
 
     public function getScormService();
+
+    public function getLaunchUrl($regId, $redirectUrl = 'closer');
 }
